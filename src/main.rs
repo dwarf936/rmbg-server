@@ -68,7 +68,7 @@ fn image_to_base64(img: &DynamicImage) -> Result<String, ImageError> {
 
 static RMGB: Lazy<Rmbg> = Lazy::new(|| {
     println!("正在加载模型...");
-    let model = Rmbg::new("models/model.onnx").unwrap();
+    let model = Rmbg::new("models/RMBG2_model.onnx").unwrap();
     println!("模型加载完成");
     model
 });
